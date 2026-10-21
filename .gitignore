@@ -1,0 +1,15 @@
+
+# Security & Environments
+.env
+venv/
+env/
+
+# Python Cache & Compiled Files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Logs & OS Files
+*.log
+.DS_Store
+Thumbs.db
