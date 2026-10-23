@@ -20,8 +20,8 @@ import streamlit.components.v1 as components
 # --------------------------------------------------------------------------- #
 # Config
 # --------------------------------------------------------------------------- #
-DEFAULT_API_URL = "http://127.0.0.1:8000/api/v1/generate-script"
-REQUEST_TIMEOUT = 180  # seconds
+DEFAULT_API_URL = "http://backend:8000/api/v1/generate-script"
+REQUEST_TIMEOUT = 500 # seconds
 PAYLOAD_KEY = "topic"  # JSON key your FastAPI endpoint expects
 NARRATION_WPM = 140  # used for the estimated runtime metric
 

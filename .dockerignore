@@ -1,0 +1,8 @@
+# Exclude unnecessary and sensitive files from the Docker build to keep images secure and lightweight
+venv/
+.env
+__pycache__/
+*.pyc
+.git
+.github/
+README.md

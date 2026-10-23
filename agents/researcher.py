@@ -48,6 +48,9 @@ async def run_research_agent(topic: str) -> str:
     
     # Generate the response
     logger.info("🧠 Gemini is analyzing the research data...")
-    response = model.generate_content(prompt)
+    response = model.generate_content(
+        prompt,
+        generation_config={"max_output_tokens": 500}
+    )
     
     return response.text

@@ -31,6 +31,9 @@ async def run_writer_agent(topic: str, research_data: str) -> str:
     """
     
     logger.info("✍️ Gemini (Writer) is drafting the cinematic script...")
-    response = model.generate_content(prompt)
+    response = model.generate_content(
+        prompt,
+        generation_config={"max_output_tokens": 8192}
+    )
     
     return response.text

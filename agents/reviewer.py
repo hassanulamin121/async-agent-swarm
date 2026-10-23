@@ -29,6 +29,9 @@ async def run_reviewer_agent(script_data: str) -> str:
     """
     
     logger.info("🧐 Gemini (Reviewer) is polishing the final cut...")
-    response = model.generate_content(prompt)
+    response = model.generate_content(
+        prompt,
+        generation_config={"max_output_tokens": 8192}
+    )
     
     return response.text
